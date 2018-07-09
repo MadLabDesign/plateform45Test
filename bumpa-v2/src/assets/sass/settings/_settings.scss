@@ -1,0 +1,132 @@
+@import '../util/modules';
+
+
+// 0. Swatch
+//-------------
+
+
+
+// 1. Grid
+//-------------
+
+$container-fluid-max-width: 100%;
+$container-padding: 10px;
+$row-margin-removed: -10px;
+$col-padding: $container-padding;
+
+// 2. Global
+//-------------
+
+$global-font-size: calc(16px + (14 - 16) * ((50% - 300px) / (1600 - 300))) !default;
+$global-width: rem-calc(1200);
+$global-lineheight: 1.2 !important;
+$light-gray: #F4F2F6 !default;
+$medium-gray: #637381 !default;
+$dark-gray: #150F41 !default;
+$black: #0a0a0a !default;
+$white: #ffffff !default;
+$text-color: #736F8D !default;
+
+$transparent-dark: rgba(30, 41, 59, 0.2);
+$transparent-light: rgba(255, 255, 255, 0.2);
+$body-background: #f4f6f7;
+$global-margin: 1rem;
+$global-padding: 4px;
+$global-weight-light: 400;
+$global-weight-normal: normal;
+$global-weight-bold: bold;
+$global-radius: 3px;
+$global-lg-radius: 10px;
+$global-text-direction: ltr;
+$global-flexbox: false;
+$print-transparent-backgrounds: true;
+
+
+@include add-bumpa-colors;
+$primary-dark:  #170C3C;
+$blurpal: #6B58EA;
+$primary:  #6956E9;
+$secondary: #45B6DE;
+$success: #B8E986;
+$warning:  hsl(38, 46%, 54%);
+$alert-color: #FF446A;
+$footer: $white;
+
+
+
+// 3. Base Typography
+// ------------------
+
+$body-font-color: $text-color !default;
+$body-font-family:  'eina03-regularuploaded_file', sans-serif !default;
+$body-font-weight: normal;
+$body-font-family-light: 'eina03-lightuploaded_file', sans-serif !default;
+$body-antialiased: true;
+$header-font-family: 'eina03-bolduploaded_file', sans-serif !default;
+$header-font-family-semi: 'eina03-semibolduploaded_file', sans-serif !default;
+$header-font-weight: bolder;
+$header-font-style: 900;
+$header-font-color: #2B4866;
+$header-line-height: 42px;
+$letter-spacing: 0.09rem;
+
+
+$header-sizes: (
+  small: (
+    'h1': 24,
+    'h2': 20,
+    'h3': 19,
+    'h4': 18,
+    'h5': 17,
+    'h6': 14,
+  ),
+  medium: (
+    'h1': 48,
+    'h2': 40,
+    'h3': 31,
+    'h4': 25,
+    'h5': 20,
+    'h6': 16,
+  ),
+);
+
+
+$header-lineheight: 1.4;
+$header-margin-bottom: 0.5rem;
+$text-decoration: none;
+
+$title-sizes: calc(18px + (22 - 18) * ((100vw - 300px) / (1600 - 300)));
+
+// Paragraphs
+$paragraph-lineheight: 1.4 !important;
+$paragraph-margin-bottom: 1rem !default;
+$paragraph-text-rendering: optimizeLegibility !default;
+
+
+
+
+// 4. Buttons
+// ------------------
+$button-padding: 16px 10px;
+$button-margin: 10px 5px;
+$button-fill: solid;
+$button-background: $primary-color;
+$button-background-hover: scale-color($button-background, $lightness: -15%);
+$button-color: $white;
+$button-color-alt: $white;
+$button-radius: $global-radius;
+$button-sizes: (
+  tiny: 0.6rem,
+  small: 0.75rem,
+  default:16px,
+  large: 1.25rem,
+);
+$button-opacity-disabled: 0.25;
+$button-letter-spacing: 0.02rem;
+$button-font-weight: 400;
+
+//typography
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font-family;
+  letter-spacing: $letter-spacing;
+}

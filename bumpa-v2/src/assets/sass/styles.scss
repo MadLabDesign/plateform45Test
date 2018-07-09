@@ -1,0 +1,43 @@
+@charset 'utf-8';
+
+//for debug -- Remove in prod
+$pesticide-debug-outline: false;
+$pesticide-debug-depth: false;
+@import "settings/pesticide";
+
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+
+//Settings
+@import "settings/settings";
+@import "material-custom-theme";
+
+//Grid
+@import "grid/grid-module";
+
+// Typography
+
+@import "typography/typography";
+
+// Fragments
+//Single elements used throughout the framework
+
+
+
+//global Styles
+@import "global";
+
+//Page Views
+@import "components/homeComponents";
+
+
+//Helpers
+@import "helpers/media-queries";
+//
+//------------------------------------
+// @includes
+// All includes that build up the sites elements
+@include grid-block;
+@include bumpa-button;
+@include media-queries;
+@include typography;
